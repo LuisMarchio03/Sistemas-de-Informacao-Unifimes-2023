@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 	/*
-		3. Crie uma classe que leia um número e imprima os números pares menos ou iguais
-		aquele número lido.
+		4. Crie uma classe que leia um número e imprima alternadamente os números pares
+		menos ou iguais aquele número lido.
 	*/
 
 	var n int
