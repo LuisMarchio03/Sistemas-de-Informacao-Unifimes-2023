@@ -4,8 +4,18 @@ import (
 	"fmt"
 	"bufio"
 	"os"
-	"strings"
 )
+
+func printInfos(name string, balance int, credit int) {
+	fmt.Printf("\n\n")
+	fmt.Printf("Informações: \n")
+	fmt.Printf("======================================\n")
+	fmt.Printf("Nome: %s\n", name)
+	fmt.Printf("Saldo médio: %d\n", balance)
+	fmt.Printf("Valor do crédito: %d%s\n", credit, "%")
+	fmt.Printf("======================================\n")
+	fmt.Printf("\n\n")
+}
 
 func main() {
   r := bufio.NewReader(os.Stdin)
@@ -14,19 +24,19 @@ func main() {
   name, err := r.ReadString('\n')
   if err != nil {}
 
+	var balance int
 	fmt.Print("Informe o saldo médio: ")
-  balance, err := r.ReadInt('\n')
-  if err != nil {}
+		_, err = fmt.Scan(&balance)
+		if err != nil {}
 
-	switch balance {
-		case balance < 0 || balance <= 2000:
-				fmt.Println("one")
-		case 2:
-				fmt.Println("two")
-		case 3:
-				fmt.Println("three")
+	switch {
+		case balance > 0 && balance <= 2000:
+			printInfos(name, balance, 0)
+		case balance > 2000 && balance <= 6000:
+			printInfos(name, balance, 20)
+		case balance > 6000 && balance <= 12000:
+			printInfos(name, balance, 30)
+		case balance > 12000:
+			printInfos(name, balance, 40)		
 	}
-
-	fmt.Printf("\n\n")
-  fmt.Printf("Dados informados: \n\nCódigo do produto: %s\nNome do produto: %s\nMarca do produto: %s\n", strings.TrimSpace(product_code),strings.TrimSpace(product_name),strings.TrimSpace(product_brand))
 }
