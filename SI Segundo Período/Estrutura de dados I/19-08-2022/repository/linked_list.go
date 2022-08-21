@@ -12,15 +12,32 @@ type List struct {
 	Tail *Node
 }
 
-func (l *List) Append(arr _struct.Array) {
+func (l *List) IsEmpty() {
+	if l.Head == nil {
+		fmt.Println("Lista vazia")
+		return
+	}
+	fmt.Println("Lista não está vazia")
+}
+
+func (l *List) Append(arr _struct.Array, append_head bool) {
 	// 1. Criar um novo Nó
 	node := Node{Value: arr}
+
+	if append_head == true {
+		if l.Head == nil {
+			l.Head = &node
+		} else {
+			node.Next = l.Head
+			l.Head = &node
+		}
+		return
+	}
 
 	// 2. Verificar se a lista está vazia, caso sim, apento
 	// o Head (inicio) da lista, para a posição na memoria do Nó que foi criado a cima
 	if l.Head == nil {
 		l.Head = &node
-
 	}
 
 	// Verifica se existe algum elemento colocado no Tail (final) do Nó
@@ -89,7 +106,28 @@ func (l *List) OrderLinkedList() {
 	}
 }
 
-func (l *List) Delete(number int64) {
+func (l *List) Delete(number int64, delHead bool, delTail bool) {
+	// Delete Head
+	if delHead == true {
+		l.Head = l.Head.Next // O Primeiro elemento, recebe o proximo elemento, dessa forma removendo ele da Lista
+		return
+	}
+
+	// Delete Tail
+	if delTail == true {
+		node := l.Head
+		for node.Next != nil {
+			if node.Next == l.Tail {
+				node.Next = nil
+				l.Tail = node
+				return
+			}
+			node = node.Next
+		}
+		node.Next = nil
+		return
+	}
+
 	// Verificar, se o primeiro elemento já é o elemento que estamos buscando
 	if l.Head.Value.Number == number {
 		l.Head = l.Head.Next // O Primeiro elemento, recebe o proximo elemento, dessa forma removendo ele da Lista
@@ -114,7 +152,9 @@ func (l *List) Delete(number int64) {
 	// Dessa forma removendo o elemente que desejamos
 	if l.Tail == node {
 		l.Tail = prev
+		return
 	}
+
 }
 
 type Node struct {
