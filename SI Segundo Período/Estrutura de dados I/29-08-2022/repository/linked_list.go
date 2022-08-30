@@ -18,6 +18,39 @@ func (l *List) IsEmpty() {
 	fmt.Println("Lista não está vazia")
 }
 
+func (l *List) CreateList(quatities_node, append_head bool) {
+	// 1. Criar um novo Nó
+
+	for i := 0; i <= quatities_node; i++ {
+		node := Node{Value: 1}
+	}
+
+	if append_head == true {
+		if l.Head == nil {
+			l.Head = &node
+		} else {
+			node.Next = l.Head
+			l.Head = &node
+		}
+		return
+	}
+
+	// 2. Verificar se a lista está vazia, caso sim, apento
+	// o Head (inicio) da lista, para a posição na memoria do Nó que foi criado a cima
+	if l.Head == nil {
+		l.Head = &node
+	}
+
+	// Verifica se existe algum elemento colocado no Tail (final) do Nó
+	// Caso sim, pegar o next (proximo) dele é apontar para o Nó
+	if l.Tail != nil {
+		l.Tail.Next = &node
+	}
+
+	// Por fim o Tail (final) passa a ser o novo Nó
+	l.Tail = &node
+}
+
 func (l *List) Append(arr _struct.Array, append_head bool) {
 	// 1. Criar um novo Nó
 	node := Node{Value: arr}
