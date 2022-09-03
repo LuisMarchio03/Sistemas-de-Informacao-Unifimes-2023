@@ -1,25 +1,25 @@
-numeros = int()
-lista = []
+numbers = int()
+list = []
 proximo = 0
 anterior = 0
 n_l = int(input("Insira o número de nós: \n"))
 
 while proximo < n_l:
-    lista += [0]
+    list += [0]
     proximo += 1
     anterior = proximo - 2
 proximo = 0
-while proximo < len(lista):
-    numeros = int(input("Digite o número do nó {}: ".format(proximo + 1)))
-    lista[proximo] = numeros
+while proximo < len(list):
+    numbers = int(input("Digite o número do nó {}: ".format(proximo + 1)))
+    list[proximo] = numbers
     proximo += 1
     anterior = proximo - 2  
-numeros = int(input("Digite o número a ser adicionado ao inicio da lista: "))
-lista.insert(0,numeros)      
+numbers = int(input("Digite o número a ser adicionado ao inicio da list: "))
+list.insert(0,numbers)      
 proximo = 0
-while proximo < len(lista):
+while proximo < len(list):
     
-    print("Nó {}: {}".format(proximo + 1, lista[proximo]))
+    print("Nó {}: {}".format(proximo + 1, list[proximo]))
     proximo += 1
     anterior = proximo - 2
 

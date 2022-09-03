@@ -15,9 +15,9 @@ import (
 // 4. Deletar um numero do array - go run main.go delete --number 20(Numero que vc deseja deletar)
 // 5. Deletar o primeiro numero do array - go run main.go delete --delete_head
 // 6. Deletar o ultimo numero do array - go run main.go delete --delete_tail
-// 7. Exibir a lista - go run main.go display
-// 8. Exibir a lista ordenada - go run main.go order
-// 9. Verificar se a lista está vazia - go run main.go empty
+// 7. Exibir a list - go run main.go display
+// 8. Exibir a list ordenada - go run main.go order
+// 9. Verificar se a list está vazia - go run main.go empty
 
 func App() *cli.App {
 	list := repository.List{}

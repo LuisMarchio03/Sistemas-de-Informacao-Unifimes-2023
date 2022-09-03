@@ -1,18 +1,18 @@
-numeros = int()
-lista = []
+numbers = int()
+list = []
 n_l = int(input("Insira o número de nós: \n"))
 
 for l in range(n_l):
-        numeros = int(input("Digite os números a serem adicionados a lista: "))
+        numbers = int(input("Digite os números a serem adicionados a list: "))
 
-        lista.append(numeros)       
+        list.append(numbers)       
         
-print("\nDados inseridos na lista: {}".format(lista))
+print("\nDados inseridos na list: {}".format(list))
 
-numeros =int(input("Digite o valor a ser encontrado: "))
-if numeros not in lista:
+numbers =int(input("Digite o valor a ser encontrado: "))
+if numbers not in list:
     print("O número não foi encotrado!")
 
 else:
-    pos = lista.index(numeros)
-    print("O elemento {} foi encontrado no Vetor: {}".format(numeros,pos))
+    pos = list.index(numbers)
+    print("O elemento {} foi encontrado no Vetor: {}".format(numbers,pos))

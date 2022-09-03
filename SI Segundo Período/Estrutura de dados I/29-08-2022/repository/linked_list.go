@@ -12,10 +12,10 @@ type List struct {
 
 func (l *List) IsEmpty() {
 	if l.Head == nil {
-		fmt.Println("Lista vazia")
+		fmt.Println("list vazia")
 		return
 	}
-	fmt.Println("Lista não está vazia")
+	fmt.Println("list não está vazia")
 }
 
 func (l *List) CreateList(quatities_node, append_head bool) {
@@ -35,8 +35,8 @@ func (l *List) CreateList(quatities_node, append_head bool) {
 		return
 	}
 
-	// 2. Verificar se a lista está vazia, caso sim, apento
-	// o Head (inicio) da lista, para a posição na memoria do Nó que foi criado a cima
+	// 2. Verificar se a list está vazia, caso sim, apento
+	// o Head (inicio) da list, para a posição na memoria do Nó que foi criado a cima
 	if l.Head == nil {
 		l.Head = &node
 	}
@@ -65,8 +65,8 @@ func (l *List) Append(arr _struct.Array, append_head bool) {
 		return
 	}
 
-	// 2. Verificar se a lista está vazia, caso sim, apento
-	// o Head (inicio) da lista, para a posição na memoria do Nó que foi criado a cima
+	// 2. Verificar se a list está vazia, caso sim, apento
+	// o Head (inicio) da list, para a posição na memoria do Nó que foi criado a cima
 	if l.Head == nil {
 		l.Head = &node
 	}
@@ -109,7 +109,7 @@ func (l *List) Search(number int64) _struct.Array {
 func (l *List) Display() {
 	node := l.Head
 	// Printa todos os elementos presentes dentro do Nó.
-	// Ao final (Tail) da lista o valor é nulo (nil)
+	// Ao final (Tail) da list o valor é nulo (nil)
 	for node != nil {
 		fmt.Println(node.Value.Number)
 		node = node.Next
@@ -140,7 +140,7 @@ func (l *List) OrderLinkedList() {
 func (l *List) Delete(number int64, delHead bool, delTail bool) {
 	// Delete Head
 	if delHead == true {
-		l.Head = l.Head.Next // O Primeiro elemento, recebe o proximo elemento, dessa forma removendo ele da Lista
+		l.Head = l.Head.Next // O Primeiro elemento, recebe o proximo elemento, dessa forma removendo ele da list
 		return
 	}
 
@@ -161,7 +161,7 @@ func (l *List) Delete(number int64, delHead bool, delTail bool) {
 
 	// Verificar, se o primeiro elemento já é o elemento que estamos buscando
 	if l.Head.Value.Number == number {
-		l.Head = l.Head.Next // O Primeiro elemento, recebe o proximo elemento, dessa forma removendo ele da Lista
+		l.Head = l.Head.Next // O Primeiro elemento, recebe o proximo elemento, dessa forma removendo ele da list
 		return
 	}
 

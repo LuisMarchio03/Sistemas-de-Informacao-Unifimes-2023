@@ -1,11 +1,11 @@
-numeros = int()
-lista = []
+numbers = int()
+list = []
 n_l = int(input("Insira o número de nós: \n"))
 
 for l in range(n_l):
-        numeros = int(input("Digite os números a serem adicionados a lista: "))
+        numbers = int(input("Digite os números a serem adicionados a list: "))
 
-        lista.append(numeros)       
+        list.append(numbers)       
 
-print("\nDados inseridos na lista: {}".format(lista))
-print("Lista em ordem decrescente: {}".format(sorted(lista, reverse = True)))
+print("\nDados inseridos na list: {}".format(list))
+print("list em ordem decrescente: {}".format(sorted(list, reverse = True)))

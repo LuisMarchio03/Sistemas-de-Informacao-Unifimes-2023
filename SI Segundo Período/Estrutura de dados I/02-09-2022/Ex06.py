@@ -1,15 +1,15 @@
-numeros = int()
-lista = []
+numbers = int()
+list = []
 n_l = int(input("Insira o número de nós: \n"))
 
 for l in range(n_l):
-        numeros = int(input("Digite os números a serem adicionados a lista: "))
-        lista.append(numeros)
+        numbers = int(input("Digite os números a serem adicionados a list: "))
+        list.append(numbers)
 
-print("\nDados inseridos na lista: {}".format(lista))
+print("\nDados inseridos na list: {}".format(list))
 
 l_m = int(input("Digite em qual vetor quer adicionar: "))
-numeros = int(input("Digite o número a ser adicionado ao meio da lista: "))
-lista.insert(l_m, numeros)
+numbers = int(input("Digite o número a ser adicionado ao meio da list: "))
+list.insert(l_m, numbers)
         
-print("\nDados inseridos na lista: {}".format(lista))
+print("\nDados inseridos na list: {}".format(list))
