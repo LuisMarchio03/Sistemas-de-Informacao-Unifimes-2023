@@ -23,7 +23,7 @@ public static void menu() {
 		total = gerarelementos(v);
 		break;
 	case 2:
-		calcularmedia(v,media,total);
+		media = calcularmedia(v,total);
 		break;
 	case 3:
 		acimamedia(v,media,qnt);
@@ -41,13 +41,13 @@ public static double gerarelementos(int[] vet) {
 		vet[i] = r.nextInt(100);
 		aux = aux + vet[i];
 	}
-  JOptionPane.showMessageDialog(null, aux);
   return aux;
 }
 
-public static void calcularmedia(int[] vet, double aux, double aux2) {
-	aux = aux2 / vet.length;
-  JOptionPane.showMessageDialog(null,"Media simples dos elementos: "+aux);
+public static double calcularmedia(int[] vet, double aux2) {
+  double aux = 0;
+  aux = aux2 / vet.length;
+	return aux;
 }
   
 public static void acimamedia(int[] vet, double aux, int aux2) {
