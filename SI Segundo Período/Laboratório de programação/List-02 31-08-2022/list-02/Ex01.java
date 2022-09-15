@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 import java.util.Random;
-public class AulaReuber_ex1 {
+public class Ex01 {
 public static void main(String[] args) {
 	menu();
 }

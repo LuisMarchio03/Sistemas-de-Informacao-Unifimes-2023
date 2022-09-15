@@ -1,5 +1,5 @@
 import javax.swing.JOptionPane;
-public class AulaReuber_ex2 {
+public class Ex02 {
 	public static void main(String[] args) {
 	menu();
 }
