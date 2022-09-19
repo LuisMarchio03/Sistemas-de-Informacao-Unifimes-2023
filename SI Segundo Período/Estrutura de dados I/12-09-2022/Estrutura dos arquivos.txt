@@ -1,0 +1,6 @@
+Estrutura Projeto
+-> Aula
+	-> Exemplo01 (Exemplos usados em aula expositiva) 
+	-> Exemplo02 
+	-> Exercício01 (Exerício de verificação de aprendizado)
+	-> Exercício02
