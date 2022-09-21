@@ -22,4 +22,6 @@
 
 ## 6. Código dentro do diretorio: ex06/main.py
 
-## 7.
+## 7. Código dentro do diretorio: ex07/main.py
+
+## 8. Código dentro do diretorio: ex08/main.py
