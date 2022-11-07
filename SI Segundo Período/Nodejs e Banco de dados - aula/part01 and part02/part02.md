@@ -6,6 +6,4 @@
 
 **4. JSON**
 
-**5. Tratamento de Erros**
-
 **6. Arrays de objetos**
