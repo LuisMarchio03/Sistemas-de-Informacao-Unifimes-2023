@@ -23,3 +23,9 @@
 **npx prisma init**
 
 **SQ Lite**
+
+**npm i sqlite3**
+
+**npx prisma migrate dev**
+
+**npx prisma studio**
