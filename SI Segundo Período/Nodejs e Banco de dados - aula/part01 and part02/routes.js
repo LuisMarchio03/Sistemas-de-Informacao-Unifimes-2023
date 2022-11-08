@@ -2,7 +2,8 @@ import { Router } from "express";
 
 const router = Router();
 
-const array = [
+// banco_de_dados_fake
+const array = [ 
   {
     id: 1,
     nome: "João",
