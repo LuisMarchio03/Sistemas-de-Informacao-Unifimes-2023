@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  postgres-unifimes:
+    image: postgres:alpine
+    ports:
+      - '5492:5432'
+    container_name: 'postgres-unifimes'
+    restart: always
+    volumes:
+      - ./data-postgres-unifimes:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pgpassword
+
+volumes:
+  data-postgres-unifimes:
