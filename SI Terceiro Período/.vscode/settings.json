@@ -1,0 +1,24 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5492,
+      "driver": "PostgreSQL",
+      "username": "pguser",
+      "password": "pgpassword",
+      "database": "unifimes",
+      "name": "unifimes"
+    },
+    {
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 5492,
+      "driver": "PostgreSQL",
+      "database": "unifimes",
+      "name": "unifimes-2",
+      "username": "pguser",
+      "password": "pgpassword"
+    }
+  ]
+}

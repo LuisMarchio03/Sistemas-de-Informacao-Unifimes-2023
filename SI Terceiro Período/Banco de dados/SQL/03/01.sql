@@ -1,0 +1,2 @@
+SELECT capacidade
+FROM Ambulatórios;
