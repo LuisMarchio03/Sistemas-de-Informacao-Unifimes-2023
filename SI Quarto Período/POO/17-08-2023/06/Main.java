@@ -1,7 +1,7 @@
 class Filme {
-    private String titulo;
-    private String diretor;
-    private String duracao;
+     String titulo;
+     String diretor;
+     String duracao;
 
     public Filme(String titulo, String diretor, String duracao) {
         this.titulo = titulo;

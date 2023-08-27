@@ -1,26 +1,13 @@
 class Televisao {
-    private String marca;
-    private String tamanho;
-    private String resolucao;
+    String marca;
+    String tamanho;
+    String resolucao;
 
     public Televisao(String marca, String tamanho, String resolucao) {
         this.marca = marca;
         this.tamanho = tamanho;
         this.resolucao = resolucao;
     }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public String getTamanho() {
-        return tamanho;
-    }
-
-    public String getResolucao() {
-        return resolucao;
-    }
-
     
 }
 
