@@ -1,4 +1,4 @@
-# Desafio - PicPay Simplificado
+# Desafio - Wallet Service
 
 Este é um desafio de desenvolvimento backend para criar uma plataforma simplificada de pagamentos, semelhante ao PicPay. O projeto será desenvolvido em Java com Spring Boot e integrado ao PostgreSQL para persistência de dados. Abaixo está o checklist passo a passo para desenvolver cada parte do projeto.
 
